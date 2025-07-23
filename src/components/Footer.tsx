@@ -1,5 +1,4 @@
 import "./Footer.css";
-import { motion } from "motion/react";
 
 const Feet = () => {
   return (
