@@ -1,0 +1,61 @@
+@import "tailwindcss";
+#HeaderContainer {
+    background-color: transparent;
+}
+
+#Name {
+    font-size: 1.6vw;
+}
+
+#Projects {
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    #Name {
+        font-size: 7vw;
+        margin-left: 22.5vw;
+    }
+    #Projects {
+        display: none;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    #Name {
+        font-size: 6vw;
+        margin-left: 2.5vw;
+    }
+    #Projects {
+        display: block;
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    #Name {
+        font-size: 4vw;
+        margin-left: 1.5vw;
+    }
+    #Projects {
+        display: block;
+        font-size: 2.5vw;
+        margin-top: 1vw;
+        margin-right: 1.5vw;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1563px) {
+    #Name {
+        font-size: 3vw;
+        margin-left: 1.5vw;
+    }
+    #Projects {
+        display: block;
+        font-size: 2vw;
+        margin-top: 1vw;
+        margin-right: 1.5vw;
+    }
+}

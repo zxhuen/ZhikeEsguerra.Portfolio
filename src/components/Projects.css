@@ -1,0 +1,87 @@
+@import "tailwindcss";
+#ProjectsContainer {
+    background-color: transparent;
+}
+
+#MainCon {
+    cursor: pointer;
+}
+
+#Proj {
+    text-align: center;
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+#bg {
+    height: 10vw;
+    margin-top: 16.6vw;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    z-index: 1;
+}
+
+#backBut {
+    color: rgb(255, 255, 255);
+    font-size: 6vw;
+    position: fixed;
+    z-index: 12;
+    display: none;
+}
+
+#bgs {
+    position: fixed;
+    background-color: black;
+    height: 50vw;
+    top: 0vw;
+    left: 0;
+    display: block;
+    width: 100vw;
+    opacity: 0.9;
+    z-index: 11;
+    display: none;
+}
+
+#frame1 {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 30vw;
+    width: 40vw;
+    top: 10vw;
+    z-index: 12;
+}
+
+#pic1 {
+    position: fixed;
+    top: 10vw;
+    z-index: 12;
+    display: none;
+}
+
+#picclick {
+    position: fixed;
+    z-index: 20;
+    background-color: red;
+    height: 20vw;
+    width: 20vw;
+    margin-bottom: 70vw;
+    top: 10vw;
+}
+
+#GITHUB {
+    position: fixed;
+    top: 6vw;
+    z-index: 14;
+    color: white;
+    font-size: 10vw;
+}
+
+#GITHUBTEXT {
+    position: fixed;
+    top: 17vw;
+    right: 11vw;
+    z-index: 14;
+    color: white;
+    font-size: 2vw;
+    opacity: 0;
+}

@@ -1,0 +1,59 @@
+@import "tailwindcss";
+#MainContainer {
+    background-color: transparent;
+}
+
+#Tech {
+    font-size: 2vw;
+}
+
+#socials {
+    font-size: 1.5vw;
+}
+
+
+
+
+/* Small devices (phones, 320px to 480px) */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #left {
+        width: 50%;
+        height: 80vw;
+        margin-top: 20vw;
+    }
+    #middle {
+        width: 70%;
+        height: 100vw;
+        margin-bottom: 20vw;
+    }
+    #right {
+        width: 50%;
+        height: 80vw;
+    }
+    #MainContainer {
+        padding-top: 0;
+    }
+    #formargin {
+        gap: 3rem;
+    }
+    #DetContainer a {
+        font-size: 7vw;
+    }
+    #techs h1 {
+        font-size: 8vw;
+    }
+    #techs div {
+        margin-inline: auto;
+    }
+}
+
+
+/* Medium devices (tablets, 481px to 768px) */
+
+@media (min-width: 481px) and (max-width: 768px) {}
+
+
+/* Large devices (small laptops, 769px to 1024px) */
+
+@media (min-width: 769px) and (max-width: 1024px) {}
