@@ -118,7 +118,7 @@ const Projects = () => {
         </motion.div>
 
         <motion.video
-          src="2025-07-22 02-39-59.mp4"
+          src={`${import.meta.env.BASE_URL}2025-07-22 02-39-59.mp4`}
           autoPlay
           loop
           muted
@@ -219,7 +219,9 @@ const Projects = () => {
 
         <motion.div
           className="relative aspect-[3/4] w-full max-w-sm  p-6 rounded-lg shadow-md bg-center bg-cover bg-no-repeat text-white"
-          style={{ backgroundImage: "url('hutato.jpg')" }}
+          style={{
+            backgroundImage: `url(${import.meta.env.BASE_URL}hutato.jpg)`,
+          }}
           initial={{
             y: 80,
             opacity: 0,
