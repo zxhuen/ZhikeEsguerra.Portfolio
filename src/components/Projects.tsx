@@ -40,6 +40,15 @@ const Projects = () => {
     return -235;
   };
 
+  const descX = () => {
+    if (PicClick) return -710;
+  };
+
+  const descRotate = () => {
+    if (PicClick) return 0;
+    return 40;
+  };
+
   return (
     <div
       className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8"
@@ -114,7 +123,11 @@ const Projects = () => {
             duration: 1.2,
           }}
         >
-          <img src="public/indexcard.jpg" alt="" width={1000} />
+          <img
+            src={`${import.meta.env.BASE_URL}indexcard.jpg`}
+            alt=""
+            width={1000}
+          />
         </motion.div>
 
         <motion.video
@@ -195,7 +208,9 @@ const Projects = () => {
             onHov(false);
           }}
         >
-          <FaGithub />
+          <a href="https://github.com/zxhuen/Musubae-Wraps" target="blank">
+            <FaGithub />
+          </a>
         </motion.p>
         <motion.p
           id="GITHUBTEXT"
@@ -214,6 +229,25 @@ const Projects = () => {
         >
           Open in github ?
         </motion.p>
+
+        <motion.div
+          id="description"
+          animate={{
+            x: descX(),
+            rotate: descRotate(),
+            transition: {
+              type: "spring",
+              duration: 1,
+            },
+          }}
+        >
+          <h1>Musubae Wraps</h1>
+          <p>
+            This is a simple landing page for Musubae Wraps with a minimalistic
+            design and animations and with a simple interface that is easy to
+            understand
+          </p>
+        </motion.div>
 
         {/* ------------------------------------------------------------------------------------------------- */}
 

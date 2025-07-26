@@ -56,6 +56,7 @@
     top: 10vw;
     z-index: 12;
     display: none;
+    cursor: pointer;
 }
 
 #picclick {
@@ -84,4 +85,30 @@
     color: white;
     font-size: 2vw;
     opacity: 0;
+}
+
+#description {
+    position: fixed;
+    background-color: white;
+    height: 40vw;
+    width: 24vw;
+    top: 4.2vw;
+    z-index: 16;
+    left: 110vw;
+}
+
+#description p {
+    font-size: 2vw;
+    text-align: center;
+    font-family: cursive;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#description h1 {
+    font-size: 2vw;
+    text-align: center;
+    font-family: cursive;
+    margin-top: 1vw;
 }
