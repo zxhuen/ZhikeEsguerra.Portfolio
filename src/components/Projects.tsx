@@ -16,6 +16,8 @@ const Projects = () => {
     onPicClick((prev) => !prev);
   };
 
+  const [hoverPIC, onHoverPIC] = useState(false);
+
   const getX = () => {
     if (!click) return -1000;
     if (PicClick) return -600;
@@ -47,6 +49,34 @@ const Projects = () => {
   const descRotate = () => {
     if (PicClick) return 0;
     return 40;
+  };
+
+  const hoverPicText = () => {
+    if (hoverPIC) return 1;
+  };
+
+  const SCALEHOVERPIC = () => {
+    if (hoverPIC) return 1.3;
+  };
+
+  const ROTATEHOVERPIC = () => {
+    if (hoverPIC) return 5;
+  };
+
+  const bgOpacity = () => {
+    if (PicClick) return 1;
+  };
+
+  const bgDisplay = () => {
+    if (PicClick) return "block";
+  };
+
+  const onHoverVid = () => {
+    onHoverPIC(true);
+  };
+
+  const outHoverVid = () => {
+    onHoverPIC(false);
   };
 
   return (
@@ -165,6 +195,8 @@ const Projects = () => {
               duration: 0.8,
             },
           }}
+          onHoverStart={onHoverVid}
+          onHoverEnd={outHoverVid}
           onClick={handlePicClick}
         />
 
@@ -230,6 +262,25 @@ const Projects = () => {
           Open in github ?
         </motion.p>
 
+        <motion.p
+          id="HOVERTEXT"
+          initial={{
+            opacity: 0,
+            rotate: 0,
+          }}
+          animate={{
+            opacity: hoverPicText(),
+            rotate: ROTATEHOVERPIC(),
+            scale: SCALEHOVERPIC(),
+          }}
+          transition={{
+            type: "spring",
+            duration: 1,
+          }}
+        >
+          Click it for more info
+        </motion.p>
+
         <motion.div
           id="description"
           animate={{
@@ -245,9 +296,22 @@ const Projects = () => {
           <p>
             This is a simple landing page for Musubae Wraps with a minimalistic
             design and animations and with a simple interface that is easy to
-            understand
+            understand <br></br>
           </p>
         </motion.div>
+
+        <motion.img
+          src="src/imgs/v877-mynt-30.jpg"
+          id="bgImage"
+          initial={{
+            opacity: 0,
+            display: "none",
+          }}
+          animate={{
+            opacity: bgOpacity(),
+            display: bgDisplay(),
+          }}
+        />
 
         {/* ------------------------------------------------------------------------------------------------- */}
 

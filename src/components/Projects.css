@@ -54,7 +54,7 @@
 #pic1 {
     position: fixed;
     top: 10vw;
-    z-index: 12;
+    z-index: 20;
     display: none;
     cursor: pointer;
 }
@@ -72,7 +72,7 @@
 #GITHUB {
     position: fixed;
     top: 6vw;
-    z-index: 14;
+    z-index: 11;
     color: white;
     font-size: 10vw;
 }
@@ -87,13 +87,23 @@
     opacity: 0;
 }
 
+#HOVERTEXT {
+    position: fixed;
+    top: 25vw;
+    right: 11vw;
+    z-index: 11;
+    color: white;
+    font-size: 2vw;
+    opacity: 0;
+}
+
 #description {
     position: fixed;
     background-color: white;
     height: 40vw;
     width: 24vw;
     top: 4.2vw;
-    z-index: 16;
+    z-index: 20;
     left: 110vw;
 }
 
@@ -111,4 +121,14 @@
     text-align: center;
     font-family: cursive;
     margin-top: 1vw;
+}
+
+#bgImage {
+    position: fixed;
+    top: 0vw;
+    right: 0;
+    z-index: 19;
+    display: none;
+    filter: brightness(90%);
+    opacity: 0;
 }
