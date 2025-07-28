@@ -301,7 +301,7 @@ const Projects = () => {
         </motion.div>
 
         <motion.img
-          src="src/imgs/v877-mynt-30.jpg"
+          src={`${import.meta.env.BASE_URL}v877-mynt-30.jpg`}
           id="bgImage"
           initial={{
             opacity: 0,
